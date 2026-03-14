@@ -1,8 +1,3 @@
-'''
-Problem Description: Return the second largest number from a list.
-Tasks: 1. Implement the function or class. 2. Write a simple test in
-main.py. 3. Commit the solution to GitHub.
-'''
 class ArrayUtils:
     #Return the second largest number from a list.
     def second_largest(self,numbers):
@@ -18,3 +13,12 @@ class ArrayUtils:
         if max2 == float('-inf'):
             return None
         return(max2)
+    #Remove duplicates from list while preserving order.
+    def duplicate_removal(self,list_input):
+        list_input = [x.strip() for x in list_input.split(",")]
+        unique_list = []
+        for i in list_input:
+            if i not in unique_list:
+                unique_list.append(i) 
+        return(unique_list)
+
