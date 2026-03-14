@@ -1,8 +1,3 @@
-'''
-Problem Description: Return the second largest number from a list.
-Tasks: 1. Implement the function or class. 2. Write a simple test in
-main.py. 3. Commit the solution to GitHub.
-'''
 class ArrayUtils:
     #Return the second largest number from a list.
     def second_largest(self,numbers):
