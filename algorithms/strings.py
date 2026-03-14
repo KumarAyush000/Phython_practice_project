@@ -1,5 +1,6 @@
-# vowel counter
+
 class StringUtils :
+    # vowel counter
     def vowel_count(self, word):
         word = word.strip().lower()
         count = 0
