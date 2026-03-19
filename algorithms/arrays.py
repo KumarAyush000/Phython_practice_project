@@ -30,3 +30,25 @@ class ArrayUtils:
         if expected_sum != numbers_sum:
             return expected_sum - numbers_sum
         return None
+    # Find common elements between two lists.
+    """
+    def common_elements(self, user_input_list):
+        parts = user_input_list.split("/")
+        if len(parts) != 2:
+            raise ValueError("Input must contain two lists separated by '/'")
+        list1 = [x.strip() for x in parts[0].split(",")]
+        list2 = [x.strip() for x in parts[1].split(",")]
+        common = []
+        for item in list1:
+            if item in list2 and item not in common:
+                common.append(item)
+        return common
+    """
+    def common_elements(self, user_input_list):
+        parts = user_input_list.split("/")
+        if len(parts) != 2:
+            raise ValueError("Invalid input format")
+        list1 = {x.strip() for x in parts[0].split(",")}
+        list2 = {x.strip() for x in parts[1].split(",")}
+        return list(list1 & list2)
+    
