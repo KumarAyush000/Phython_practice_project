@@ -42,10 +42,17 @@ user_input = StringUtils()
 word = input("Enter the word to check for palindrome: ")
 print(user_input.palindrome_checker(word))
 """
+"""
 user_input = ArrayUtils()
 user_input_list = input("Enter the numbers separated by a comma (,) for the lists and use (/) to separate lists: ")
 try:
     print(user_input.common_elements(user_input_list))
 except ValueError as e:
     print("Error:", e)
-
+"""
+user_input = ArrayUtils()
+numbers = input("Enter the numbers separated by a comma (,) to find even and odd count: ")
+try:
+    print(user_input.even_odd_count(numbers))
+except ValueError as e:
+    print("Error:",e)

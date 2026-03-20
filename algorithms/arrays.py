@@ -51,4 +51,21 @@ class ArrayUtils:
         list1 = {x.strip() for x in parts[0].split(",")}
         list2 = {x.strip() for x in parts[1].split(",")}
         return list(list1 & list2)
+    # Even Odd Counter
+    def even_odd_count(self, numbers):
+        try:
+            numbers = [int(n.strip()) for n in numbers.split(",")]
+        except ValueError:
+            raise ValueError("Invalid input format")
+        even = {"even_count" : 0, "even_values": []}
+        odd = {"odd_count" : 0, "odd_values": []}
+        for n in numbers:
+            if n % 2 == 0:
+                even["even_count"] += 1
+                even["even_values"].append(n)
+            else:
+                odd["odd_count"] += 1
+                odd["odd_values"].append(n)
+        return even, odd
+            
     
