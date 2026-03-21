@@ -1,6 +1,7 @@
 from algorithms.strings import StringUtils
 from algorithms.arrays import ArrayUtils
 from algorithms.dictionaries import DictionaryUtils
+from algorithms.recursion import RecursionUtils
 
 """
 user_input = StringUtils()
@@ -50,9 +51,14 @@ try:
 except ValueError as e:
     print("Error:", e)
 """
+"""
 user_input = ArrayUtils()
 numbers = input("Enter the numbers separated by a comma (,) to find even and odd count: ")
 try:
     print(user_input.even_odd_count(numbers))
 except ValueError as e:
     print("Error:",e)
+"""
+user_input = RecursionUtils()
+matrix = input("Enter the elements for the list separated by comma(',') to move to the next nested lsit use('/'): ")
+print(user_input.flatten_list(matrix))
