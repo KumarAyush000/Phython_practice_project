@@ -69,7 +69,9 @@ user_input = DictionaryUtils()
 paragraph = input("Enter the paragraph : ")
 print(user_input.word_frequency(paragraph))
 """
+"""
 user_input = StringUtils()
 word1 = input("Enter the first word to check for anagram: ")
 word2 = input("Enter the second word to check for anagram: ")
 print(f"Anagram: {user_input.anagram_finder(word1, word2)}")
+"""
